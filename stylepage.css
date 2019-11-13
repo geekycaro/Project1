@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap");
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: auto;
     font-family: 'Open Sans', sans-serif;
     color: #4C5270;
 }
@@ -53,7 +52,7 @@ li a{
   
 li a:hover{
     background-color: #E1C340!important;
-    transition: 0.5s;
+    transition: 0.8s;
     text-transform: uppercase;
     padding: o;
     margin: o;
@@ -79,7 +78,7 @@ li a:hover{
    font-family: open sans;
    font-weight: 700;
    border-radius: 5px;
-   color: white;  
+   color: #FFFFFF;  
 }
 
 .button:hover{
@@ -87,17 +86,20 @@ li a:hover{
 }
 
 p.main{
-    font-weight: 800;
+    font-weight: 800;   
 }
 
 .proj{
     display: grid;
-    grid-template-columns: repeat(3);
-    grid-template-rows: repeat(3);
     grid-gap: 50px;
     text-align: center;
     align-items: center;
-    padding: 100px;
+    padding: 50px;
+}
+
+.tab:hover{
+    width: 380px;
+    transition-duration: 9s;
 }
 
 .ft{
@@ -112,11 +114,14 @@ p.main{
 }
 
 .content{
-    
     background-image: url(img/aboutbckgrnd.png);
     overflow: hidden;
     margin: auto;
-    padding: 10px;
+    width: auto;
+}
+
+.box{
+    margin-bottom: 75px;
 }
 
 .me{
@@ -135,24 +140,57 @@ p.main{
     text-align: center;
 }
 
-.googleMaps{
-    padding: 40px;
-    float: left;
-    max-width: 100%;
-    margin-top: 45px;
-    margin-left: 50px;
+p.main1{
+    font-weight: 800;  
+    color: #FF2768;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 650px;
+    padding-bottom: 100px;  
+}
+
+.row{
+    padding: 5px; 
+    position: relative;   
+}
+
+.cell{
+    width: 200px;
+    height: 200px;
+    display: table-cell;
+    border-radius: 25px;
+}
+
+.cell:hover{
+    opacity: 0.5;
+}
+
+.map{
+    position: relative;
+    text-align: center;
+    height: 1080px;
+    width: 1080px;   
+}
+
+.mapCanvas{
+    overflow: hidden;
+    background: none;
+    margin: 30px;
+    border-style: hidden;
+    border-radius: 15px;
+}
 .frm{
-    padding: 50px;
-    float: auto;
-    resize: both;
+    padding: 10px;
     border: 2px solid;
-    display: table;
-    margin: 120px;
+    margin-top: 50px;
     border-style: ridge;
-    border-color: #FA26A0;
-    
+    border-color: #FA26A0; 
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;   
 }
 
 .ttl{
